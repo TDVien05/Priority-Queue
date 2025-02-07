@@ -30,10 +30,18 @@ public class Lib {
             choice = getInt("Input number to choose priorty : ");
             choice--;
             switch (choice) {
-                case 0 -> pri = Priority.GOLD;
-                case 1 -> pri = Priority.SILVER;
-                case 2 -> pri = Priority.REGULAR;
-                default -> System.out.println("Invalid number. Please choose priority again.");
+                case 0 : 
+                    pri = Priority.GOLD;
+                    break;
+                case 1 : 
+                    pri = Priority.SILVER;
+                    break;
+                case 2:
+                    pri = Priority.REGULAR;
+                    break;
+                default :
+                    System.out.println("Invalid number. Please choose priority again.");
+                    break;
             }
         } while (choice < 0 || choice > 2);
         
